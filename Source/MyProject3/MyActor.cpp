@@ -11,7 +11,6 @@ AMyActor::AMyActor()
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MESH"));
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> StaticMesh(TEXT("StaticMesh'/Game/PolygonDungeonRealms/Meshes/Props/SM_Prop_Barrel_Small_01.SM_Prop_Barrel_Small_01'"));
 	Mesh->SetStaticMesh(StaticMesh.Object);
-
 }
 // Called when the game starts or when spawned
 void AMyActor::BeginPlay()
